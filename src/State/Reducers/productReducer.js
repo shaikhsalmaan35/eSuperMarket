@@ -1,4 +1,4 @@
 export const productReducer = (state = { data: ["Nike Shoes"] }, action) => {
-  console.log("Reducer has been called");
+  console.log("action=======>", action);
   return state;
 };

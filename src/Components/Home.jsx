@@ -1,5 +1,10 @@
 import React from "react";
+import { ProductItem } from "./ProductItem";
 
 export const Home = () => {
-  return <div>Home</div>;
+  return (
+    <div>
+      <ProductItem />
+    </div>
+  );
 };

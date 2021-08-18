@@ -1,9 +1,18 @@
-// import logo from './logo.svg';
+import { Provider } from "react-redux";
+import { ConfigStore } from "./State/Store/ConfigStore";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import { Home } from "./Components/Home";
 
 function App() {
-  return <div className="App"></div>;
+  const localStore = ConfigStore();
+  return (
+    <div className="App">
+      <Provider store={localStore}>
+        <Home />
+      </Provider>
+    </div>
+  );
 }
 
 export default App;

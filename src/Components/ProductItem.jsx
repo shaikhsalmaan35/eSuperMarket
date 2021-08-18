@@ -22,7 +22,16 @@ export const ProductItem = () => {
             </Button>
           </Col>
           <Col>
-            <Button>-</Button>
+            <Button
+              onClick={() =>
+                dispatch({
+                  type: "REMOVE_PRODUCT",
+                  data: [],
+                })
+              }
+            >
+              -
+            </Button>
           </Col>
         </Row>
       </Card>
